@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: rgb(75, 27, 27);
+            color: azure;
+            height: 100px;
+            width: 220px;
+
+            margin: auto;
+            /* Auto faz com que a margem centralize o box */
+        }
+
+        a {
+            display: block;
+        }
+
+        h3#exemplo1 {
+            background-color: chocolate;
+            height: 80px;
+            width: 200px;
+
+            border-width: 10px;
+            border-style: groove;
+            border-color: brown;
+
+            padding-top: 10px;
+            padding-right: 8px;
+            padding-bottom: 8px;
+            padding-left: 8px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: darkslategray;
+
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-left: auto;
+
+        }
+
+        h3#exemplo2 {
+
+            background-color: chocolate;
+            height: 80px;
+            width: 200px;
+
+            border: 10px groove brown;
+            padding: 10px 8px 8px 8px;
+            /* Sentido horário, caso sejam todas idênticas, basta o valor uma vez */
+            outline: 5px dashed darkslategray;
+
+            margin: 10px auto; /* Nessa configuração é 1° Top-bottom 2° Left-Right */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Modelo de Caixas</h1>
+    <h2>Atributos de uma caixa</h2>
+    <ul type="circle">
+        <li><span>Height</span>: Altura</li>
+        <li><span>Width</span>: Largura</li>
+        <li><span>Border</span>: Linha que circunda o conteúdo</li>
+        <li><span>Padding</span>: (Tradução: preenchimento) Espaço dado entre o border e o pontilhado da caixa (?)</li>
+        <li><span>Margin</span>: Espaço externo da borda entre dois boxs</li>
+        <li><span>Outline</span>: Espaço fora da borda dentro do Margin</li>
+    </ul>
+    <h2>Tipos de boxs</h2>
+    <ul>
+        <li><span>box-level</span>: ao ser criada, pula para uma linha nova, ou seja, para um próximo espaço, ocupando
+            uma linha inteira do viewport <br>
+            <span>Exemplos</span>:
+            &lt;div&gt;,&lt;h1&gt;,&lt;p&gt;,&lt;main&gt;,&lt;nav&gt;,&lt;article&gt;,&lt;header&gt;,&lt;aside&gt;,&lt;footer&gt;,&lt;form&gt;,&lt;video&gt;,
+            etc.
+        </li>
+        <li><span>inline-level</span>: ao ser criada continua o caminho do conteúdo, ou seja, não quebra a linha e nem
+            ocupa todo o width do viewport.<br>
+            <span>Exemplos</span>:
+            &lt;span&gt;,&lt;a&gt;,&lt;code&gt;,&lt;strong&gt;,&lt;small&gt;,&lt;sup&gt;,&lt;sub&gt;,&lt;em&gt;,&lt;label&gt;,&lt;button&gt;,&lt;input&gt;,&lt;select&gt;
+        </li>
+
+        <h2>Anotações</h2>
+        <ul>
+            <li><span>User agent</span>: O navegador que está abrindo o conteúdo</li>
+        </ul>
+
+        <h2>Exemplos</h2>
+        <h3 id="exemplo1">Títulos são exemplos de box-level</h3>
+
+        <h3 id="exemplo2">Também é possível usar short-hand</h3>
+        <p>Parágrafos também são exemplos de box-level, porém os <a href="#">links</a> são exemplos de inline-level. Mudar o display significa mudar se a tag será inline-level ou box-level</p>
+
+
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes e Pseudo-Elementos</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+
+        /* Exemplo 01: */
+        div > p { /* Aqui ele só terá efeito em parágrafos dentro de divs */
+            display: none;
+
+        }
+
+        div.ex01:hover > p { /* Quando eu passar o mouse na div aqui, o elemento p irá {...} */
+        display: block; /* Display travado */
+        color: whitesmoke;
+        background-color: chocolate;
+        width: fit-content;
+
+        }
+
+        div.ex01:hover {
+            color: red;
+
+        }
+
+        /* Exemplo 02: */
+        div.ex02 {
+            /* A forma como será mostrado na página */
+            display: inline-block; 
+
+            background-color: aliceblue;
+            border: 1px solid black;
+            text-align: center;
+
+            /* Tamanho dos divs */
+            height: 200px;
+            width: 200px;
+        }
+
+        div.ex02:hover {
+            background-color: rgb(95, 99, 102);
+        }
+
+        /* Exemplo 03: */
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a::before {
+            content: "-> ";
+            text-decoration: none;
+        }
+        a::after {
+            content: " [link]";
+            text-decoration: none; /* Conteudo dessa extensão */
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseu-Classes</h1>
+<p>Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor após um sinal de dois pontos e especificam um estado especial de um elemento. Existem várias pseudo-classes para estilos, podemos citar :hover, :visited, :active, :checked, :empty e :focus.</p>
+<h2>Personalizando Links Exemplo 3:</h2>
+<ul>
+    <li><a href="https://github.com/Roberto-Mota">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/paulo-mota-0a2104201/">LinkedIn</a></li>
+    <li><a href="https://cursos.alura.com.br/user/PauloMota">Página Alura</a></li>
+</ul>
+<h2>Exemplo 1</h2>
+<p>Passar o mouse no texto marcado</p>
+<div class=ex01>
+    Passe o mouse aqui
+    <p>Esse parágrafo fica escondido dentro da div</p>
+</div>
+<h2>Exemplo 2</h2>
+<div class=ex02>div1</div>
+<div class=ex02>div2</div>
+<div class=ex02>div3</div>
+
+<h2>Anotações</h2>
+<p>As pseudo classes, representadas por : devem estar relacionadas a um elemento ou uma classe. <br>
+As pseudo classes representam o estado de um elemento</p>
+
+<h1>Pseudo-Elementos</h1>
+<p>
+    Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um seletor após dois sinais de dois pontos e permitem que você formate um pedaço específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS são ::before, ::after, ::first-letter, ::first-line.
+</p>
+
+</body>
+</html>

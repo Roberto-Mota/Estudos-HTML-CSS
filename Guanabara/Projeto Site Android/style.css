@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Import da fonte Bebas Neue*/
+
+@font-face {
+    font-family:"Android";
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --corPrinA: #36D98E;
+    --corPrinB: #1b6d47;
+    --corSecB: #4383F3;
+    --corSecC: #083043;
+    --corCompD: #FA6735;
+    --corCompE: #EFF6CF;
+    --corCompF: #D8EFFF;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', monospace;
+}
+
+* /* Configuração global */ {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: auto;
+    background-color: #c1fce1;
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\1F517';
+}
+
+header {
+    background-image: linear-gradient(to top, var(--corPrinA), var(--corPrinB));
+    min-height: 120px;
+    text-align: center;
+    padding-top: 25px;
+    text-shadow: 0px 0px 2px black;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    
+}
+ header > p {
+     font-family: var(--fonte-padrao);
+     color: white;
+     font-size: 1.2em;
+     max-width: 600px;
+     margin: auto;
+     padding-left: 8px;
+     padding-right: 8px;
+     /* Com a largura de 500px, o p automaticamente virou um bloco que não se corrige com responsividade, logo se faz necessário corrigir isso através de um margin: auto */
+
+ }
+
+ nav {
+     background-color: var(--corSecC);
+     padding: 10px;
+ }
+
+ nav > a {
+     color: var(--corCompF);
+     padding: 10px;
+     text-decoration: none;
+     font-weight: bold;
+     transition-duration: 0.5s; /* Quando mexer o mouse por cima, demora mais para a transição */
+ }
+
+ nav > a:hover {
+    color: whitesmoke;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: var(--corCompD);
+    text-decoration: underline;
+ }
+
+ main {
+     background-color: white;
+
+     margin-right: auto;
+     margin-left: auto; /* Quando for uma tela muito grande, o main vai ser corrigido para o meio, conforme sua max-width */
+
+     min-width: 300px; /* Quando tiver 300px, o pedaço do main parará de crescer */
+     max-width: 1000px;
+
+     margin-bottom: 25px;
+     padding: 18px; /* Da uma afastada das letras pro canto do main */
+     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.616);
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+ }
+
+main h1 {
+    color: var(--corSecC);
+    font-family: var(--fonte-android), monospace;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+}
+
+main p {
+    margin: 12px 1px;
+    text-align: justify;
+    text-indent: 25px; /* Distância do início de parágrafo */
+    line-height: 1.6em;
+    font-size: 1.05em;
+    padding: 2px 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: var(--corCompF);
+    background-color: var(--corSecB);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--corSecB);
+    background-color: var(--corCompF);
+}
+
+main img {
+    width: 100%; /* As imagens sempre ficarão 100% no espaço do main */
+}
+
+main img.pequena {
+    max-width: 350px;
+    min-width: 80px;
+    display: block;
+    margin: auto;
+    
+}
+
+div.video {
+    background-color: var(--corCompF);
+    margin: 0px -18px 30px -18px; /* O -18 é pra encaixar nas laterais do main */
+    padding: 20px;
+    padding-bottom: 58.5%;
+    position: relative
+}
+
+div.video > iframe {
+    position: absolute;
+    /* Quando eu coloco um posicionamento absoluto é pssível usar o top e o left. Com eles eu posso escolher precisamente onde cada elemento da div irá se posicionar*/
+    top: 5%;
+    left: 3%;
+    width: 94%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--corCompF);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.363);
+}
+
+aside > h3 {
+    background-color: var(--corSecC);
+    color: var(--corCompF);
+    padding: 12px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\1F535\00A0\00A0'; /* 00a0 é um espaço sem quebra (ñ é compatível com todos os navegadores*/
+    list-style-position: inside; /* Posicao da lista */
+    columns: 3;
+    line-height: 20px;
+}
+
+footer {
+    background-color: var(--corCompD);
+    color: white;
+    text-align: center;
+    font-size:  0.8em;
+    padding: 5px;
+}
+/*
+Cor Prin A: #1B8C57
+Cor Mono B: #63FFB6 (fundo #c1fce1)
+Cor Mono C: #3FD991
+Cor Comp D: #8C1D0D
+Cor Comp E: #D9533F

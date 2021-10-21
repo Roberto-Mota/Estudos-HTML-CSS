@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+
+    <h2><img src="imagens/streamline-icon-design-color-bucket-brush@48x48.png" alt=""> Negrito / Destaque </h2>
+    <p>Nessa frase temos um termo <b>em negrito</b> usando a tag b (sem semântica)</p>
+    <p>Nessa frase temos um termo <strong>em negrito</strong> usando a tag strong (semântica)</p>
+
+    <h2><img src="imagens/streamline-icon-food-drink-pizza@48x48.png" alt=""> Itálico / Ênfase</h2>
+    <p>Nessa frase temos um termo <i>em itálico</i> usando a tag i (sem semântica)</p>
+    <p>Nessa frase temos um termo <em>em itálico</em> usando a tag em (semântica)</p>
+
+    <h2><img src="imagens/streamline-icon-design-hilight@48x48.png" alt=""> Texto Marcado </h2>
+    <p>Pode criar também um <mark style="background-color: rgb(0, 255, 200);">texto marcado</mark> usando a tag MARK</p> <!-- Porém mudar a cor do marcador acaba tendo que ser feito no CSS, nesse exemplo o estilo está direto no tag-->
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Podemos escrever textos <big>grandes</big> com a tag big e <small>pequenos</small> com a tag small, porém a tag big vai cair</p>
+    <!-- A opinião do Guanabara é porque o small ainda tem utilidades em, por exemplo, contratos com letras menores-->
+
+    <h2>Texto deletado</h2>
+    <p>a Tag del faz <del>isso</del>, onde se mostra que existe porém deve ser desconsiderado</p>
+
+    <h2>Texto inserido</h2>
+    <p>A Tag ins faz <ins>isso</ins> para indicar que o elemento tem ênfase e foi adicionado depois</p>
+    <p>A Tag u faz <u>isso</u> com apenas com forma e provavelmente entrará em desuso</p>
+
+    <h2>Texto sobescrito</h2>
+    <p>X<sup>20</sup> + 10 = y (Tag sup)</p>
+
+    <h2>Texto subescrito</h2>
+    <p>H<sub>2</sub>0 (Tag sub)</p>
+    <small><a href="https://www.streamlinehq.com">Free Design Hilight PNG icon by Streamline</a></small>
+
+    <h2>Usando Code e Pre</h2>
+    <p>A tag code é semântica e diz ao navegador que isso é um trecho de código,<br> porém ele não ficará formatada, aí que entra a tag pre, que deixa o 
+    <br> código formatado do jeito que entrou na tag:</p>
+    <pre>
+        <code>
+    Scanner sc = new Scanner(System.in);
+    int i = sc.nextInt();
+</code>
+</pre>
+    <h2>Citações</h2>
+    <p>Como diria Seu Madruga: <q>Não existe trabalho ruim, o ruim é ter que trabalhar</q> <br>
+    Isso foi feito através de a tag q, que além de deixar como citação visual, também faz isso de forma semântica.</p>
+    <p>a tag blockquote <blockquote>faz uma citação grande (em bloco), sendo que se usa cite="link aqui", você coopera com os mecanismos de buscas, apesar de não haver diferença visual</blockquote></p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <p>A tag abbr me permite nomear as abreviações ao passar o mouse em cima, de forma simples</p>
+
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        main {
+            background-color: blanchedalmond;
+            padding: 10px;
+            border-radius: 10px;
+            margin: auto;
+
+            min-width: 280px; /* Celulares antigos é 320px, mas comno a margem é 10 (10+10=20), então reduziremos um pouco */
+            max-width: 800px;
+        }
+
+        img {
+            width: 100%; /* A largura da imagem sempre será 100% */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1> Testando responsividade
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ratione recusandae laborum adipisci quae officia quasi voluptatibus blanditiis maiores cumque id voluptates iure tenetur consequatur voluptas facilis rem, impedit dolorem!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, commodi pariatur corporis, ab quidem voluptatem eius cumque reiciendis rem quaerat quod voluptates magnam nam vitae blanditiis a voluptatibus nihil consequuntur!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo velit laborum pariatur odio eum sit ex quia et suscipit. Velit fugit suscipit perspiciatis, temporibus molestias quae natus soluta eaque!</p>
+        <picture>
+            <source media="(max-width: 500px)" srcset="../imagens/irina-blok-pq.jpg">
+            <img src="../imagens/irina-blok.jpg" alt="">
+        
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam alias molestias asperiores quae facilis, laboriosam nobis quo, sequi veritatis, recusandae aspernatur! Voluptate dicta, harum ducimus cumque numquam voluptatum magnam corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat corporis autem explicabo ad minus, veniam nisi asperiores corrupti rem totam impedit sint veritatis, dolore nostrum, eos repellendus quo. Ducimus, aspernatur.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(113, 83, 133);
+            border: 2px;
+        }
+
+        header {
+            background-color: white;
+            padding: 8px;
+            margin: 10px auto;
+            border-radius: 10px 0px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 10px 10px;
+        }
+
+        footer {
+            background-color: rgb(100, 54, 131);
+            color: aliceblue;
+            text-align: center;
+            padding: 0.5px;
+        }
+
+        footer > p {
+            margin: 1px;
+        }
+
+        nav {
+            background-color: rgb(100, 54, 131);
+            text-align: center;
+            box-shadow: 3px 4px 6px 1px rgba(0, 0, 0, 0.39);
+            border-radius: 4px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(238, 194, 247);
+            margin: 2em;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        code {
+            background-color: rgb(218, 218, 218);
+            border-radius: 10px; /* Cantos da borda */
+            padding: 5px;
+        }
+
+        article {
+            background-color: rgb(233, 225, 238);
+            border-radius: 5px;
+            border: 10px;
+        }
+
+        article>aside {
+            background-color: rgb(189, 167, 202);
+            border-radius: 0px 0px 5px 5px;
+            padding: 0px 0px 0px 5px;
+           
+        }
+
+        article > p {
+            padding: 0px 10px 10px 10px;
+            text-align: justify;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <!-- Menu de navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id='aula'>
+            <h1>Grouping Tags</h1>
+            <p>Antes do HTML5 era muito mais comum a criação de várias DIVs pelo site para a organização do site. Mas
+                com o HTML5 foram criadas as grouping tags semânticas (header, main, footer, sections)</p>
+        </section>
+
+        <section id='assuntos'>
+            <article>
+                <h2><code>&lt;section&gt;</code>:</h2>
+                <p>The section tag defines sections in a document, such as chapters, headers, footers, or any other
+                    sections of the document.</p>
+                <p>The section element represents a generic section of a document or application. A section, in this
+                    context, is a thematic grouping of content. Each section should be identified, typically by
+                    including a
+                    heading ( h1- h6 element) as a child of the section element.</p>
+            </article>
+        </section>
+        <section id='noticias'>
+            <article>
+                <h2><code>&lt;article&gt;</code></h2>
+                <p>The article element represents a complete, or self-contained, composition in a document, page,
+                    application, or site and that is, in principle, independently distributable or reusable, e.g. in
+                    syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a
+                    user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+                    Each article should be identified, typically by including a heading (h1–h6 element) as a child of
+                    the article element.</p>
+                <p>The article tag specifies independent, self-contained content. <br>
+
+                    An article should make sense on its own and it should be possible to distribute it independently
+                    from the rest of the site. <br>
+
+                    Potential sources for the article element: <br>
+
+                    Forum post,
+                    Blog post,
+                    News story,
+                    Comment, etc.</p>
+            </article>
+            <article>
+                <h2><code>&lt;aside&gt;</code></h2>
+                <p>The aside element represents a section of a page that consists of content that is tangentially
+                    related to the content around the aside element, and which could be considered separate from that
+                    content. Such sections are often represented as sidebars in printed typography. e.g. :</p>
+                <aside><small>Artigo escrito por José da Silva</small></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p><small>Site desenvolvido por Paulo R. R. Mota</small></p>
+    </footer>
+</body>
+
+</html>

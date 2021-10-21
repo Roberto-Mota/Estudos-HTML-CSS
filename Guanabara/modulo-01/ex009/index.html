@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links</h1>
+    <h2>usando links externos</h2>
+    <p>Tag a - âncora, com o parametro href="url aqui", e o target="_blank" pra abrir em uma nova página (não colocar o parâmetro faz om que o link sobrepõe-se à atual página aberta) e rel="external" pra falar que é externo ao meu site</p>
+    <p>Você pode linkar textos, como por exemplo: você pode <a href="https://github.com/Roberto-Mota" target="_blank" rel="external">acessar meu github</a></p>
+
+    <!--Capítulo 10 Aula 2 – Links Internos-->
+    <hr>
+    <h2>Usando links internos</h2>
+    <p>Essa é a página 1, <a href="pag002.html" rel="next" target="_self">acessar página 2<a></p>
+    <p>Na Tag a, o parâmetro rel="" também tem o nofollow, que diz que não é confiavel aquele site que vai direcionar, ou nao tem o aval do site <br>
+    outro parâmetro é o "next", que indica que está indo para outra página desse mesmo site, sendo antagônico ao "prev" </p>
+    <p><a href="linux/pag003.html" rel="next" target="_self">Página 3</a></p>
+
+    <!--Capítulo 10 Aula 3-->
+    <hr>
+    <h2>Usando links para download</h2>
+    <ul>
+        <p>Baixar a imagem das <a href="../ex006/imagens/windturbinesmall.jpg" type="image/jpeg" download="../ex006/imagens/windturbinesmall.jpg">turbinas eólicas</a></p>
+        <p>Baixar o <a href="">favicon dos rascunho</a></p>
+    </ul>
+    <p>Pra fazer ser possível o download, precisa usar o parametro type="" e procurar o application certo no <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="extern">site de aplicações</a>, e o parametro download="" com o arquivo que você quer</p>
+
+    <hr>
+
+    <h3>Tentativa de download com imagem</h3>
+    <p>Link para download de imagem: 
+    <a href="../ex006/imagens/streamline-icon-internet-network-computer-download@48x48.png" type="image/png" download="../ex006/imagens/">
+        <!-- Aqui eu posso colocar um texto ou uma imagem-->
+        <img src="../ex006/imagens/streamline-icon-internet-network-computer-download@48x48.png" alt="">
+    </a>
+</p>
+
+<li><abbr title="Use a tag &lt;img&gt;">Imagens</abbr></li>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        * { /* Configurações globais de css */
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to bottom, #ded4e7 95%, #614b74, #290547);
+            background-attachment: fixed;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de cores</h1>
+    <p>
+        <ul>
+            <li>Primarias: Amarelo, vermelho e azul</li>
+            <li>Secundárias: Laranja, violeta e verde</li>
+            <li>Terciárias: Amarelo-esverdeado, amarelo-alaranjado, vermelho alaranjado, etc... tons pastéis</li>
+        </ul>
+        <p>(Eu acho que gostei do azul arroxeado</p>
+        <h2>Dicas</h2>
+        <p>Trocar a saturação e luminosidade de uma cor produz uma paleta monocromática</p>
+        <h2>Sites para trabalhar com cores</h2>
+        <a href="https://color.adobe.com">Adobe color</a>
+        <p>Cores que eu acho que gostei em hexadecimal: <br>
+            17c3b2 ffcb77 3581b8 fef9ef fe6d73</p>
+        <h2>Pegar cores na internet</h2>
+        <p>Plugin do Chrome Colorzilla</p>
+    </p>
+    <h2>Fazendo um degradê</h2>
+    <p><pre><code>body {
+        background-image: linear-gradient(to right, white, blue);
+    }</code></pre><br>
+Esse formato faz um degradê simples, da esquerda pra direita, do branco para o azul</p>
+<p>Para não ficar com um degradê repetindo no fundo enquanto da um scroll down precisamos utilizar o atributo(?) <code>background-attachment: fixed;</code>. Com esse atributo, o gradiente fica fixado na tela como um todo (meio feio eu acho)</p>
+</body>
+</html>

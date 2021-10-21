@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas e áudios</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Teste abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture> <!-- Aqui estou falando que virá uma imagem, que será subdividida em tamanhos diferentes-->
+
+        <source media="(max-width: 750px" srcset="imagens/fundop.png" type="Image/png"> <!-- Aqui é o primeiro filtro, onde, caso o tamanho da tela for menor do que 750 vai carregar aqui (maximo até 750), se passar carrega o m (pode ser feito de forma inversa)-->
+
+        <source media="(max-width: 1050px)" srcset="imagens/fundom.png" type="Image/png"> <!-- Aqui é o segundo filtro, onde, caso o tamanho da tela for menor do que 1000 vai carregar aqui, se passar carrega o g (pode ser feito de forma inversa)-->
+
+
+        <img src="imagens/fundog.png" alt=""> <!-- A imagem padrão é a g, caso nenhum dos filtros ali passem-->
+    </picture>
+
+    <h1>Áudio</h1>
+    <p>Para colocar áudio de uma forma bem simples:</p>
+    <audio src="audio/Beep Short .mp3" controls></audio>
+    <!-- Funciona com os formatos MP3, WAB e OGG-->
+
+    <p>Reprodução com &lt;audio&gt; sem src=, fazendo com partes de source, que funcionam como a imagem dinâmica, preload="metadata" faz com que o audio comece a baixar apenas quando começar a escutar.</p>
+    <audio controls preload="metadata"> <!-- metadata é um parametro que faz com que o audio nao seja carregado logo ao iniciar o site, não precisando ter que baixar o áudio todo para considerar o site como completamente carregado-->
+        <source src="midia/guanacast-33.mp3"  type="audio/mpeg">
+        <!--Aqui vai em ordem, caso nao funcione, vai pro proximo, eu poderia colocar filtros, assim como funciona com as imagens, onde tentaria varios formatos de arquivos-->
+        <p>Seu navegador não foi capaz de carregar essa joça</p>
+    </audio>
+    
+</body>
+</html>

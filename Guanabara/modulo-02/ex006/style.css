@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(146, 127, 131, 0.24);
+}
+
+#principal {
+    color: black;
+    text-align: center;
+}
+
+#HTMLeCSS {
+    text-align: center;
+}
+
+.parte1 {
+    color: brown;
+}
+
+.parte2 {
+    background-color: rgba(21, 38, 75, 0.979);
+}
+
+.codigo {
+    background-color: rgb(85, 0, 0);
+    color: azure;
+    font-family: monospace;
+}
+
+h1 {
+    color: rgb(73, 8, 21);
+}
+h2 {
+    color: rgb(87, 13, 28)
+}
+
+h3 {
+    color: green;
+}

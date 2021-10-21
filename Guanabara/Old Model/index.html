@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+    </style>
+    <h1>Parágrafos e quebras de linha</h1>
+    <hr>
+    <p>Você pode escrever
+        um paragráfo
+        de qualquer jeito
+        nao importa, estando dentro do par de tags, não rola
+
+
+    </p>
+    <p>Pra quebrar, usa a tag br:</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Aspernatur similique deserunt nesciunt veniam id laudantium fugit iste <br> iure, ex iusto voluptatibus culpa? Architecto, quae? Expedita enim beatae <br> explicabo aspernatur soluta.</p>
+    <p>lorem</p>
+    <!--&lt;  &gt; faz aparecer o <> -->
+    <!--Cap 5 - Aula 2-->
+    <hr>
+
+    <p>&#x1F609;</p> <!-- Ir no emojipedia pra ver o nome depois do + -->
+
+    <!--Cap 6 - Aula 4-->
+    <hr>
+    <h1>Testando carga de imagens</h1>
+    <img src="awasmall.jpg" alt="gato tomando awa">
+    <!--Tem como coolocar url da internet-->
+    <img src="https://cdn.icon-icons.com/icons2/2714/PNG/128/git_pull_request_thin_icon_171745.png" alt="icone pull">
+
+    <!---Cap 6 - Aula 5-->
+    <hr>
+    <p>Colocando o favicon lá em cima</p>
+
+    <!---Cap 8 - Aula 1-->
+    <hr>
+    <h2>Negrito / Destaque</h2>
+    <p>Existem duas maneiras de colocar em negrito, <br> uma baseada em <b>forma</b> (&lt;b&gt;) <br> e outra na <strong>semântica</strong> (&lt;strong&gt;) </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>
+        Pra escrever em <i>italico</i> apenas em forma usa-se &lt;i&gt;</i><br>
+        Pra escrever com <em>ênfase</em> de forma semântica usa-se &lt;em&gt;
+    </p>
+
+    <!--Cap 8 - Aula 3 -->
+    <hr>
+    <h2>Marcação de texto</h2>
+    <p>Pode criar também um <mark style="background-color: rgb(0, 255, 200);">texto marcado</mark> usando a tag MARK</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Podemos escrever textos <big>grandes</big> e <small>pequenos</small>, porém a tag big vai cair</p>
+    <h2>Texto deletado</h2>
+    <p>a Tag del faz <del>isso</del></p>
+    <h2>Texto inserido</h2>
+    <p>A Tag ins faz <ins>isso</ins></p>
+    <p>A Tag u faz <u>isso</u> com forma apenas</p>
+    <h2>Texto sobescrito</h2>
+    <p>X<sup>20</sup> + 10 = y (Tag sup)</p>
+    <h2>Texto subescrito</h2>
+    <p>H<sub>2</sub>0 (Tag sub)</p>
+
+    <!--Cap 8 - Aula 4 -->
+    <hr>
+    <h2>Código fontes / Pré-formatação</h2>
+    <p>O código <code>var = int(input('Digite um número inteiro)</code> é escrito na lingua Python</p>
+    <p>a Tag pre deixa as identações do código</p>
+    <h2>Citações</h2>
+    <p>a tag q <q>faz uma citação</q> de forma semântica</p>
+    <p>a tag blockquote <blockquote>faz uma citação grande (em bloco), sendo que se usa cite="link aqui", você coopera com os mecanismos de buscas, apesar de não haver diferença visual</blockquote></p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <p>A tag abbr me permite nomear as abreviações ao passar o mouse em cima, de forma simples</p>
+
+    <!--Capítulo 9 Aula 1 -->
+    <hr>
+    <h2>Listas</h2>
+    <h3>Listas ordenadas</h3>
+    <p>A tag ol faz listas ordenadas, cada item recebe a tag li, sendo que /li é opcional</p>
+    <ol>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+        <li>Estudar</li>
+        <li>Fazer exercícios</li>
+    </ol>
+    <p>Posso colocar o prâmetro types com type="" e start="" pra começar onde eu quiser (type="i" faz numeração romana)</p>
+
+    <ol type="1">
+        <li>Estudar</li>
+        <li>Almoçar</li>
+        <li>Estudar</li>
+        <li>Fazer exercícios</li>
+    </ol>
+    <h3>Listas não ordenadas</h3>
+    <p>A tag ul faz listas ordenadas, cada item recebe a tag li, sendo que /li é opcional</p>
+    <ul type='disc'>
+        <li>Comprar chás</li>
+        <li>Comprar coisa de coar chá</li>
+        <li>Comprar plantas que dá pra fazer chá</li>
+    </ul>
+    <p>Posso colocar o prâmetro types com type="", tendo as opções "disc" "circle" "square"</p>
+
+    <!--Capítulo 9 Aula 2-->
+    <hr>
+    <h2>Juntando listas</h2>
+    <ol>
+        <li>Itens organizados</li>
+        <ol>
+            <li>Item a</li>
+            <li>Item b</li>
+        </ol>
+        <li>Itens desorganizados 2</li>
+        <ul>
+            <li>curiosidade 1</li>
+            <li>curiosidade 2</li>
+        </ul>
+        </ol>
+    </ol>
+    <h2>Lista de definição (tipo dicionário)</h2>
+    <p>Tag dl, com sub tags dt - Termo, dd - descrição</p>
+    <dl>
+        <dt>Lorem:</dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</dd>
+    </dl>
+    <!--Capítulo 10 Aula 1-->
+    <hr>
+    <h1>usando links externos</h1>
+    <p>Tag a - âncora, com o parametro href="url aqui", e o target="_blank" pra abrir em uma nova página e rel="external" pra falar que é externo ao meu site</p>
+    <p>Você pode linkar textos, como por exemplo: você pode <a href="https://github.com/Roberto-Mota" target="_blank" rel="external">acessar meu github</a></p>
+
+    <!--Capítulo 10 Aula 2 – Links Internos-->
+    <hr>
+    <h2>Usando links internos</h2>
+    <p>Essa é a página 1, <a href="pag002.html" rel="next" target="_self">acessar página 2<a></p>
+    <p>Na Tag a, o parâmetro rel="" também tem o nofollow, que diz que não é confiavel aquele site que vai direcionar, ou nao tem o aval do site</p>
+    <p><a href="linux/pag003.html" rel="next" target="_self">Página 3</a></p>
+
+    <!--Capítulo 10 Aula 3-->
+    <hr>
+    <h2>Usando links para download</h2>
+    <ul>
+        <p>Baixar o <a href="awa.jpg" type="image/jpeg" download="awa.jpg">meme da awa</a></p>
+        <p>Baixar o <a href="">favicon dos rascunho</a></p>
+    </ul>
+    <p>Pra fazer ser possível o download, precisa usar o parametro type="" e procurar o application certo no <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="extern">site de aplicações</a>, e o parametro download="" com o arquivo que você quer</p>
+
+
+    <!--Capítulo 11 Aula 2-->
+    <hr>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fundop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fundom.png" type="image/png">
+        <img src="imagens/fundog.png" alt="imagem flexivel">
+    </picture>
+
+    <!--Capítulo 11 Aula 2-->
+    <hr>
+    <p>Reprodução de audio</p>
+    <p>Método &lt;audio&gt; com controls e autoplay</p>
+    <audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+
+    <p>Reprodução com &lt;audio&gt; sem src=, fazendo com partes de source, que funcionam como a imagem dinâmica, preload="metadata" faz com que o audio comece a baixar apenas quando começar a escutar e tals</p>
+    <audio preload="metadata">
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <!--Aqui vai em ordem, caso nao funcione, vai pro proximo-->
+        <p>Seu navegador não foi capaz de carregar essa joça</p>
+    </audio>
+
+    <!--Capítulo 11 Aula 5-->
+    <hr>
+    <video src="midia/Pexels Videos 1672800.mp4" width="500" controls></video>
+
+</body>
+</html>

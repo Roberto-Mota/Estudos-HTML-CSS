@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    font-family: monospace, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #F0F2F2,#D9BBB0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* Medidas absolutas: 
+    cm, mm, in, px, pt, pc
+    
+    Medidas relativas
+    em (relativa ao tamanaho atual da fonte, mais especificamente do M maisuculo)
+    ex (relativa a altura x de uma fonte)
+    rem (root em(?))
+    vw (largura da viewport, ou seja, tamanho da tela)
+    vh (altura da view port)
+    Px e Em são os mais recomendados*/
+
+    font-size: 14px;
+    }
+
+
+main {
+    background-color: #F0F2F2;
+    border-radius: 10px; /* Arredonda as beirolas */
+    box-shadow: 5px 5px 15px #959696;
+    width: 600px;
+    padding: 100px;
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    color: #8C2B4F;
+    text-align: center;
+    text-shadow: 1px 1px 1px #50192d;
+}
+
+h2 {
+    color: #2C2A59;
+}
+
+/* Color Theme Swatches in Hex */
+.Stack-of-books-with-laptop-on-wooden-table-1-hex { color: #8C2B4F; }
+.Stack-of-books-with-laptop-on-wooden-table-2-hex { color: #2C2A59; }
+.Stack-of-books-with-laptop-on-wooden-table-3-hex { color: #30BAD9; }
+.Stack-of-books-with-laptop-on-wooden-table-4-hex { color: #F0F2F2; }
+.Stack-of-books-with-laptop-on-wooden-table-5-hex { color: #D9BBB0; }
+
+/* Cores da foto de perfil */
+/* #00CABF - #FFF900 - #FF488A */

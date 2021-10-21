@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o id com CSS</title>
+    <style>
+        h3 {
+            color: yellow;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main><h1 id="principal">Usando o id com CSS</h1>
+        <p id="HTMLeCSS">Tudo que <br>
+            em HTML é id => em CSS é # (1 elemento) <br>
+            em HTML é class => em CSS é . (n elementos)
+        </p>
+        <p>Dentro de um mesmo documento HTML só pode ter um elemento com um id, isto é, dá pra usar um mesmo id em várias tags do HTML mas isso é um comportamento errado, afinal funcionar não significa que está certo. Para evitar esse comportamento podemos utilizar classes</p>
+        <p>Para poder utilizar atributos globais existe a tag <span class=codigo>&lt;span&gt;</span>, que não significa nada por si só mas pode carregar alguma classe ou id nela</p>
+        <p>Também é possível acumular classes e id em um mesmo elemento. mas precisa levar em consideração a hierarquia das aplicações do CSS, pois o Class é aplicado antes e o ID depois, sobrepondo as configurações do ID sempre herdando a classe, que atrás de tudo herda as configurações da própria tag, ou seja: Tag &lt; Class &lt; ID</p>
+        <h2>Hierarquia</h2>
+        <p>Essa hierarquia de ID, classes e tag funcionam de forma semelhante à hierarquia de inline, local e external, onde, por peso, se configura assim: <br>
+        <ul>
+            <li>1° (mais pesado): <span style="color: red; font-weight: bold;" >inline</span> / <span style="color: red; font-weight: bold;" >ID</span></li>
+            <li>2° (intermediário): <span style="color: rgb(255, 255, 0); font-weight: bold;">local</span> / <span style="color: rgb(255, 255, 0); font-weight: bold;">Class</span></li>
+            <li>3° (mais leve): <span style="color: green; font-weight: bold;">external</span> / <span style="color: green; font-weight: bold;">TAG</span></li>
+        </ul></p>
+        <h2 class="parte1">Subtítulo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, beatae nostrum temporibus voluptas tenetur minima! Natus odit earum reiciendis quae, quis iure id repellat dolores nostrum ab esse! Numquam, temporibus?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat explicabo est eius blanditiis? Natus dolorum saepe architecto consequuntur voluptatum atque doloribus repellendus, recusandae dolor in perspiciatis accusamus id facilis magni?</p>
+        <h2 class="parte1">Subtítulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At distinctio, doloribus expedita facilis aliquid cum blanditiis a quo voluptate laboriosam. Quae quo libero, est sapiente voluptate maxime quasi cupiditate architecto?</p>
+        <h2 class="parte2">Subtítulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dicta. Laudantium repellendus rerum, voluptatibus ut architecto voluptas fugiat accusamus libero dolorem distinctio commodi repudiandae autem exercitationem ipsum atque corporis numquam.</p>
+        <h2 class="parte2">Subtítulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dicta. Laudantium repellendus rerum, voluptatibus ut architecto voluptas fugiat accusamus libero dolorem distinctio commodi repudiandae autem exercitationem ipsum atque corporis numquam.</p>
+        <h3 style="color: red;">Teste prioridade de Inline, local e external</h3>
+    </main>
+    
+</body>
+</html>
