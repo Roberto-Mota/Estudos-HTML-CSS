@@ -1,2 +1,2 @@
 # Paulo-HTML-CSS
- Estudos em
+Repositório dedicado aos meus estudos relacionados a HTML e CSS.
