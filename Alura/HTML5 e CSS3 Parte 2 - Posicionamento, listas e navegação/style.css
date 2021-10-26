@@ -1,0 +1,95 @@
+
+
+header {
+	width: 100%;
+	padding: 20px 0;
+	background: #BBBBBB;
+	
+}
+
+
+
+.caixa {
+	position: relative;
+	width: 0 auto; /* Número duro */
+	margin: 0 auto;
+}
+
+div.class img {
+	position: absolute;
+	left: 10%;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 10%;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px; /* Aumenta o espaço entre um item e outro */
+}
+
+nav a {
+	text-transform: uppercase; /* Faz com que, visualmente, os tesxtos fiquem em Capslock sem necessariamente usar caps no texto do HTML. Usar caps no texto em si é contra a etiqueta (?) da internet */
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+	transition: 0.4s;
+}
+
+#banner {
+	width:100%;
+	padding-top: 10px;
+}
+
+p {
+	text-align: center;
+}
+
+#missao {
+	font-size: 20px
+}
+
+em strong {
+	color: #FF0000;
+}
+
+.itens {
+	font-style: italic
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+ul#blistabeneficios {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
+.imagembeneficios {
+	width: 50%;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}

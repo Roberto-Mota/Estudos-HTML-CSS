@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #example1 {
+          box-sizing: content-box;  
+          width: 300px;
+          height: 100px;
+          padding: 30px;  
+          border: 10px solid blue;
+        }
+        
+        #example2 {
+          box-sizing: border-box;
+          width: 300px; /* Deve ter esse valor no final, independente se aumentar padding, border, etc. (É bem aplicado com porcentagens) */
+          height: 100px;
+          padding: 30px;  
+          border: 10px solid blue;
+        }
+        </style>
+</head>
+<body>
+<h1>Utilidade do box-sizing: border-box</h1>
+<p>Define como a largura e a altura de um elemento são calculadas: devem incluir preenchimento e bordas ou não. Então, o que o border-box faz é definir se os valores dados a width e a height serão calculados dentro da caixa. Veja esse exemplo:</p>
+<h2>box-sizing: content-box (default):</h2>
+<div id="example1"><p>380px</p></div>
+
+<h2>box-sizing: border-box:</h2>
+<div id="example2"><p>300px</p></div>
+
+<p>No exemple1, que é modo padrão, será somado aos 300px de largura 20px de bordar (10px de direita e 10 de esquerda) + 60px de padding (30px da esquerda e 30px da direita) totalizando 380px. Com o box-sizing: border-box, no exemple2, todo esse comportamento é prevenido e deixando a caixa com os 300px de largura.</p>
+
+</body>
+</html>
+</body>
+</html>
