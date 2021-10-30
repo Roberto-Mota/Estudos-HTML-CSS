@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-contato.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png" alt="logo da barbearia Alura"></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form> <!-- A tag form é importante semnaticamente e prática para distinguir formulários POST e GET -->
+
+            <!-- Aqui, ao invés de usar a Tag P, usaremos uma tag para o input, com a tag label-->
+            <label for="nomeSobrenome">Nome e sobrenome: </label>
+            <input type="text" name="" id="nomeSobrenome" class="input-padrao" required>
+            <!-- Required torna o preenchimento desse input obrigatório -->
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="" id="email" class="input-padrao" required placeholder="seuemail@seudominio.com">
+            <!-- A tag placeholder deixa uma sugestâo de preenchimento-->
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" name="" id="telefone" class="input-padrao" placeholder="(DDD) 00000-0000">
+
+
+            <!-- A tag textarea aceita mais conteudo, ela é diferente da input pois é uma tag de conteúdo (?) (abre e fecha)-->
+            <label for="mensagem">Deixe sua mensagem:</label>
+            <textarea name="" id="mensagem" cols="30" rows="10" class="input-padrao" placeholder="Digite sua mensagem aqui"> </textarea>
+
+            <fieldset>
+                <!-- O elemento HTML <fieldset> é usado para agrupar elementos, assim como labels (<label>), dentro de um formulário web.
+                    É uma maneira conveniente de criar grupos de widgets que compartilham o mesmo propósito. Um elemento <fieldset> pode ser rotulado com um <legend>. O <legend> descreve formalmente a finalidade do <fieldset> ao qual está incluído. -->
+                <!-- Caso queira agrupar as celula basta usar a tag <colspan="X">, onde X é o número de células que você quer agrupar.-->
+                <legend>Entrar em contato através do:</legend>
+                <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email">E-mail</label>
+                
+
+                <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone" value="telefone" >Telefone</label>
+                
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" value="whatsapp" checked>Whatsapp</label>
+                
+                </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
+
+            <label> <input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+            <!-- Quando temos um label e um input formando um par podemos colocar o input já dentro do label pra eles se conectarem (?) -->
+
+            
+            <input type="submit" value="Mandar bala" class="enviar">
+            <!-- Input submite é bom para enviar os dados para um servidor, email, etc-->
+        </form>
+
+        <table>
+            <!-- Uma linha é um tablerow <tr>, uma celula se chama <td>, <thead> é o cabeçalho da tabela, <th> é equivalente a <td> porém para o cabeçalho -->
+            <thead>
+                <tr>
+                    <th>Dias</th>
+                    <th>Horários</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunta</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h - 16h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="logo-branco.png" alt="logo da barbearia Alura">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+</body>
+</html>

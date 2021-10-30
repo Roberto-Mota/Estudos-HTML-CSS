@@ -1,0 +1,65 @@
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 8px;
+}
+
+nav a:hover {
+	color: #C78C19;
+	background-color: #8f7f5e5d;
+	border-radius: 8px;
+    transition: 0.4s;
+
+}
+
+main {
+	width: 940px;
+	margin: 0 auto
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+	text-align: left;
+}
+
+.input-padrao {
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px 10px; /* o padding de input modifica o campo de preenchimento em sí */
+	width: 40%;
+}
+
+.checkbox {
+	margin: 16px 0px;
+}
